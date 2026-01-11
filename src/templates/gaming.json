@@ -1,0 +1,27 @@
+{
+  "categories": [
+    {
+      "name": "📜 INFORMATION",
+      "channels": [
+        { "name": "rules", "type": "text" },
+        { "name": "announcements", "type": "text" }
+      ]
+    },
+    {
+      "name": "🎮 GENERAL ZONE",
+      "channels": [
+        { "name": "general-chat", "type": "text" },
+        { "name": "looking-for-group", "type": "text" },
+        { "name": "clips-and-highlights", "type": "text" },
+        { "name": "Lobby", "type": "voice" }
+      ]
+    },
+    {
+      "name": "🏆 RANKED",
+      "channels": [
+        { "name": "Team 1", "type": "voice" },
+        { "name": "Team 2", "type": "voice" }
+      ]
+    }
+  ]
+}

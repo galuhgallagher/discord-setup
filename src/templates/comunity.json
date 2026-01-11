@@ -1,0 +1,21 @@
+{
+  "categories": [
+    {
+      "name": "👋 WELCOME",
+      "channels": [
+        { "name": "welcome", "type": "text" },
+        { "name": "roles", "type": "text" }
+      ]
+    },
+    {
+      "name": "💬 SOCIAL",
+      "channels": [
+        { "name": "general", "type": "text" },
+        { "name": "memes", "type": "text" },
+        { "name": "media", "type": "text" },
+        { "name": "Lounge", "type": "voice" },
+        { "name": "Music", "type": "voice" }
+      ]
+    }
+  ]
+}

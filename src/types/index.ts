@@ -1,14 +1,28 @@
 import {
   SlashCommandBuilder,
-  CommandInteraction,
+  ChatInputCommandInteraction,
   PermissionResolvable,
+  ButtonInteraction,
+  StringSelectMenuInteraction,
+  ModalSubmitInteraction,
 } from "discord.js";
 
 export interface SlashCommand {
   command: SlashCommandBuilder | any;
-  execute: (interaction: CommandInteraction) => Promise<void>;
+  execute: (interaction: ChatInputCommandInteraction) => Promise<void>;
   cooldown?: number;
   permissions?: PermissionResolvable[];
+}
+
+export interface ComponentCommand {
+  customId: string;
+  execute: (
+    interaction:
+      | ButtonInteraction
+      | StringSelectMenuInteraction
+      | ModalSubmitInteraction
+      | any
+  ) => Promise<void>;
 }
 
 export interface BotConfig {

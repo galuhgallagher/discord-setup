@@ -1,47 +1,57 @@
-import { Interaction, Events, MessageFlags } from "discord.js";
+import { Interaction, Events } from "discord.js";
 import { ExtendedClient } from "../structures/client";
 
 export default {
   name: Events.InteractionCreate,
   async execute(interaction: Interaction) {
-    if (!interaction.isChatInputCommand()) return;
-
     const client = interaction.client as ExtendedClient;
-    const command = client.commands.get(interaction.commandName);
 
-    if (!command) {
-      console.error(
-        `No command matching ${interaction.commandName} was found.`
-      );
+    if (interaction.isChatInputCommand()) {
+      const command = client.commands.get(interaction.commandName);
+      if (!command) return;
+
+      try {
+        await command.execute(interaction);
+      } catch (error) {
+        console.error(error);
+        const errPayload = {
+          content: "Error executing command",
+          ephemeral: true,
+        };
+        if (interaction.replied || interaction.deferred)
+          await interaction.followUp(errPayload).catch(() => {});
+        else await interaction.reply(errPayload).catch(() => {});
+      }
       return;
     }
 
-    try {
-      await command.execute(interaction);
-    } catch (error: any) {
-      if (error.code === 10062 || error.code === 404) {
-        console.warn(
-          `Interaction ${interaction.commandName} expired (Bot late response > 3 seconds).`
-        );
-        return;
-      }
+    let component;
 
-      console.error(`Error executing ${interaction.commandName}:`, error);
+    if (interaction.isButton()) {
+      component = client.buttons.get(interaction.customId);
+    } else if (interaction.isStringSelectMenu()) {
+      component = client.selectMenus.get(interaction.customId);
+    } else if (interaction.isModalSubmit()) {
+      component = client.modals.get(interaction.customId);
+    }
 
-      if (interaction.replied || interaction.deferred) {
-        await interaction
-          .followUp({
-            content: "There was an error while executing this command!",
-            flags: MessageFlags.Ephemeral,
-          })
-          .catch(() => {});
-      } else {
-        await interaction
-          .reply({
-            content: "There was an error while executing this command!",
-            flags: MessageFlags.Ephemeral,
-          })
-          .catch(() => {});
+    if (component) {
+      try {
+        await component.execute(interaction);
+      } catch (error) {
+        console.error("Component Error:", error);
+
+        const errPayload = {
+          content: "There was an error processing this interaction.",
+          ephemeral: true,
+        };
+        if (
+          interaction.isRepliable() &&
+          !interaction.replied &&
+          !interaction.deferred
+        ) {
+          await interaction.reply(errPayload).catch(() => {});
+        }
       }
     }
   },

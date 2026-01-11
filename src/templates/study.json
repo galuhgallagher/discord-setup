@@ -1,0 +1,20 @@
+{
+  "categories": [
+    {
+      "name": "🏫 CAMPUS INFO",
+      "channels": [
+        { "name": "bulletin-board", "type": "text" },
+        { "name": "schedule", "type": "text" }
+      ]
+    },
+    {
+      "name": "📚 STUDY ROOMS",
+      "channels": [
+        { "name": "homework-help", "type": "text" },
+        { "name": "resources", "type": "text" },
+        { "name": "Quiet Study A", "type": "voice" },
+        { "name": "Group Discussion", "type": "voice" }
+      ]
+    }
+  ]
+}
