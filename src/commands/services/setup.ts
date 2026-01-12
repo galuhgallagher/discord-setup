@@ -6,6 +6,7 @@ import {
   EmbedBuilder,
   PermissionFlagsBits,
   ChatInputCommandInteraction,
+  Colors,
 } from "discord.js";
 import { SlashCommand } from "../../types";
 
@@ -25,7 +26,7 @@ const command: SlashCommand = {
           "**Study**: Channels for study groups and classes.\n" +
           "**Community**: General channels for community servers."
       )
-      .setColor("Blue");
+      .setColor(Colors.Yellow);
 
     const selectMenu = new StringSelectMenuBuilder()
       .setCustomId("setup_select_template")
