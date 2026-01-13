@@ -52,7 +52,7 @@ const loadComponents = (folderName: string, collection: any) => {
 };
 
 if (fs.existsSync(interactionsPath)) {
-  console.log("🔄 Loading interactions...");
+  console.log("Loading interactions...");
   loadComponents("buttons", client.buttons);
   loadComponents("select-menus", client.selectMenus);
   loadComponents("modals", client.modals);
@@ -64,7 +64,7 @@ if (fs.existsSync(eventsPath)) {
     .readdirSync(eventsPath)
     .filter((file) => file.endsWith(".ts"));
 
-  console.log("🔄 Loading events...");
+  console.log("Loading events...");
 
   for (const file of eventFiles) {
     const filePath = path.join(eventsPath, file);
