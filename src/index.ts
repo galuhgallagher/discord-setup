@@ -25,6 +25,7 @@ for (const folder of commandFolders) {
     const command: SlashCommand = commandModule.default || commandModule;
 
     if ("command" in command && "execute" in command) {
+      command.category = folder.charAt(0).toUpperCase() + folder.slice(1);
       client.commands.set(command.command.name, command);
       console.log(`Loaded command: ${command.command.name}`);
     }

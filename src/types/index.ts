@@ -12,6 +12,7 @@ export interface SlashCommand {
   execute: (interaction: ChatInputCommandInteraction) => Promise<void>;
   cooldown?: number;
   permissions?: PermissionResolvable[];
+  category?: string;
 }
 
 export interface ComponentCommand {
@@ -21,7 +22,7 @@ export interface ComponentCommand {
       | ButtonInteraction
       | StringSelectMenuInteraction
       | ModalSubmitInteraction
-      | any
+      | any,
   ) => Promise<void>;
 }
 

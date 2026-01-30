@@ -26,7 +26,7 @@ export default {
           const checkAndUpdate = async (prefix: string, newValue: number) => {
             const channel = guild.channels.cache.find(
               (c) =>
-                c.name.startsWith(prefix) && c.type === ChannelType.GuildVoice
+                c.name.startsWith(prefix) && c.type === ChannelType.GuildVoice,
             );
 
             if (channel) {
@@ -44,7 +44,7 @@ export default {
         } catch (error) {
           console.error(
             `Failed to update stats for guild ${guild.name}:`,
-            error
+            error,
           );
         }
       });
