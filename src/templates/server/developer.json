@@ -1,0 +1,867 @@
+{
+  "roles": [
+    {
+      "name": "@everyone",
+      "color": "#000000",
+      "hoist": false,
+      "permissions": "1024",
+      "isEveryone": true
+    },
+    {
+      "name": "King",
+      "color": "#ffffff",
+      "hoist": false,
+      "mentionable": false,
+      "permissions": "0"
+    },
+    {
+      "name": "Queen",
+      "color": "#ffffff",
+      "hoist": false,
+      "mentionable": false,
+      "permissions": "0"
+    },
+    {
+      "name": "Rook",
+      "color": "#ffffff",
+      "hoist": false,
+      "mentionable": false,
+      "permissions": "0"
+    },
+    {
+      "name": "Bishop",
+      "color": "#ffffff",
+      "hoist": false,
+      "mentionable": false,
+      "permissions": "0"
+    },
+    {
+      "name": "Knight",
+      "color": "#ffffff",
+      "hoist": false,
+      "mentionable": false,
+      "permissions": "0"
+    },
+    {
+      "name": "Pawn",
+      "color": "#ffffff",
+      "hoist": false,
+      "mentionable": false,
+      "permissions": "0"
+    },
+    {
+      "name": "Blunder",
+      "color": "#ff0000",
+      "hoist": false,
+      "mentionable": false,
+      "permissions": "0"
+    },
+    {
+      "name": "Mistake",
+      "color": "#e67e22",
+      "hoist": false,
+      "mentionable": false,
+      "permissions": "0"
+    },
+    {
+      "name": "Book",
+      "color": "#a84300",
+      "hoist": false,
+      "mentionable": false,
+      "permissions": "0"
+    },
+    {
+      "name": "Miss",
+      "color": "#fb7979",
+      "hoist": false,
+      "mentionable": false,
+      "permissions": "0"
+    },
+    {
+      "name": "Good",
+      "color": "#00bc64",
+      "hoist": false,
+      "mentionable": false,
+      "permissions": "0"
+    },
+    {
+      "name": "Excellent",
+      "color": "#28dd00",
+      "hoist": false,
+      "mentionable": false,
+      "permissions": "0"
+    },
+    {
+      "name": "Best",
+      "color": "#28dd00",
+      "hoist": false,
+      "mentionable": false,
+      "permissions": "0"
+    },
+    {
+      "name": "Great",
+      "color": "#3498db",
+      "hoist": false,
+      "mentionable": false,
+      "permissions": "0"
+    },
+    {
+      "name": "Brilliant",
+      "color": "#00f2ff",
+      "hoist": false,
+      "mentionable": false,
+      "permissions": "0"
+    },
+    {
+      "name": "Puzzle",
+      "color": "#2ecc71",
+      "hoist": false,
+      "mentionable": false,
+      "permissions": "0"
+    },
+    {
+      "name": "Tournament",
+      "color": "#1abc9c",
+      "hoist": false,
+      "mentionable": false,
+      "permissions": "0"
+    },
+    {
+      "name": "960 Daily",
+      "color": "#992d22",
+      "hoist": false,
+      "mentionable": false,
+      "permissions": "0"
+    },
+    {
+      "name": "Daily",
+      "color": "#ffd735",
+      "hoist": false,
+      "mentionable": false,
+      "permissions": "0"
+    },
+    {
+      "name": "960",
+      "color": "#e74c3c",
+      "hoist": false,
+      "mentionable": false,
+      "permissions": "0"
+    },
+    {
+      "name": "Bullet",
+      "color": "#c27c0e",
+      "hoist": false,
+      "mentionable": false,
+      "permissions": "0"
+    },
+    {
+      "name": "Blitz",
+      "color": "#f1c40f",
+      "hoist": false,
+      "mentionable": false,
+      "permissions": "0"
+    },
+    {
+      "name": "Rapid",
+      "color": "#2ecc71",
+      "hoist": false,
+      "mentionable": false,
+      "permissions": "0"
+    },
+    {
+      "name": "Indonesian",
+      "color": "#f62323",
+      "hoist": false,
+      "mentionable": false,
+      "permissions": "0"
+    },
+    {
+      "name": "Giveaway Notification",
+      "color": "#000000",
+      "hoist": false,
+      "mentionable": false,
+      "permissions": "0"
+    },
+    {
+      "name": "Content Notification",
+      "color": "#000000",
+      "hoist": false,
+      "mentionable": false,
+      "permissions": "0"
+    },
+    {
+      "name": "Bot",
+      "color": "#000000",
+      "hoist": true,
+      "mentionable": false,
+      "permissions": "1024"
+    },
+    {
+      "name": "Member",
+      "color": "#3498db",
+      "hoist": true,
+      "mentionable": false,
+      "permissions": "4398083329536"
+    },
+    {
+      "name": "Moderator",
+      "color": "#1abc9c",
+      "hoist": true,
+      "mentionable": false,
+      "permissions": "8194"
+    },
+    {
+      "name": "Admin",
+      "color": "#e91e63",
+      "hoist": true,
+      "mentionable": false,
+      "permissions": "8"
+    },
+    {
+      "name": "Owner",
+      "color": "#f1c40f",
+      "hoist": true,
+      "mentionable": false,
+      "permissions": "0"
+    }
+  ],
+  "categories": [
+    {
+      "name": "Moderation",
+      "permissions": [
+        {
+          "roleName": "@everyone",
+          "allow": "0",
+          "deny": "1024"
+        }
+      ],
+      "channels": [
+        {
+          "name": "📝┃invite-log",
+          "type": "text",
+          "permissions": [
+            {
+              "roleName": "@everyone",
+              "allow": "0",
+              "deny": "1024"
+            }
+          ]
+        },
+        {
+          "name": "🗣️┃staff-chat",
+          "type": "text",
+          "permissions": [
+            {
+              "roleName": "@everyone",
+              "allow": "0",
+              "deny": "1024"
+            }
+          ]
+        },
+        {
+          "name": "📂┃server-files",
+          "type": "text",
+          "permissions": [
+            {
+              "roleName": "@everyone",
+              "allow": "0",
+              "deny": "1024"
+            }
+          ]
+        },
+        {
+          "name": "🔔┃automod-alerts",
+          "type": "text",
+          "permissions": [
+            {
+              "roleName": "@everyone",
+              "allow": "0",
+              "deny": "1024"
+            }
+          ]
+        },
+        {
+          "name": "📝┃appeal-logs",
+          "type": "text",
+          "permissions": [
+            {
+              "roleName": "@everyone",
+              "allow": "0",
+              "deny": "1024"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "General Info",
+      "permissions": [
+        {
+          "roleName": "Member",
+          "allow": "1049600",
+          "deny": "0"
+        },
+        {
+          "roleName": "@everyone",
+          "allow": "0",
+          "deny": "2048"
+        }
+      ],
+      "channels": [
+        {
+          "name": "👋┃welcome",
+          "type": "text",
+          "permissions": [
+            {
+              "roleName": "Member",
+              "allow": "1049600",
+              "deny": "0"
+            },
+            {
+              "roleName": "@everyone",
+              "allow": "0",
+              "deny": "2048"
+            }
+          ]
+        },
+        {
+          "name": "📜┃rules",
+          "type": "text",
+          "permissions": [
+            {
+              "roleName": "Member",
+              "allow": "1049600",
+              "deny": "0"
+            },
+            {
+              "roleName": "@everyone",
+              "allow": "0",
+              "deny": "2048"
+            }
+          ]
+        },
+        {
+          "name": "📥┃claim-roles",
+          "type": "text",
+          "permissions": [
+            {
+              "roleName": "Member",
+              "allow": "1049600",
+              "deny": "0"
+            },
+            {
+              "roleName": "@everyone",
+              "allow": "0",
+              "deny": "2048"
+            }
+          ]
+        },
+        {
+          "name": "📢┃announcements",
+          "type": "announcement",
+          "permissions": [
+            {
+              "roleName": "Member",
+              "allow": "1049600",
+              "deny": "0"
+            },
+            {
+              "roleName": "@everyone",
+              "allow": "0",
+              "deny": "2048"
+            }
+          ]
+        },
+        {
+          "name": "🎥┃new-content",
+          "type": "announcement",
+          "permissions": [
+            {
+              "roleName": "Member",
+              "allow": "1049600",
+              "deny": "0"
+            },
+            {
+              "roleName": "@everyone",
+              "allow": "0",
+              "deny": "2048"
+            }
+          ]
+        },
+        {
+          "name": "🎉┃giveaway",
+          "type": "announcement",
+          "permissions": [
+            {
+              "roleName": "Member",
+              "allow": "1049600",
+              "deny": "0"
+            },
+            {
+              "roleName": "@everyone",
+              "allow": "0",
+              "deny": "2048"
+            }
+          ]
+        },
+        {
+          "name": "⚡┃booster",
+          "type": "text",
+          "permissions": [
+            {
+              "roleName": "Member",
+              "allow": "1049600",
+              "deny": "0"
+            },
+            {
+              "roleName": "@everyone",
+              "allow": "0",
+              "deny": "2048"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Report",
+      "permissions": [
+        {
+          "roleName": "Member",
+          "allow": "1049600",
+          "deny": "0"
+        },
+        {
+          "roleName": "@everyone",
+          "allow": "0",
+          "deny": "2048"
+        }
+      ],
+      "channels": [
+        {
+          "name": "📣┃report-user",
+          "type": "text",
+          "permissions": [
+            {
+              "roleName": "Member",
+              "allow": "1084416",
+              "deny": "65536"
+            },
+            {
+              "roleName": "@everyone",
+              "allow": "2048",
+              "deny": "65536"
+            }
+          ]
+        },
+        {
+          "name": "⚖️┃justice-channel",
+          "type": "text",
+          "permissions": [
+            {
+              "roleName": "Member",
+              "allow": "1049600",
+              "deny": "0"
+            },
+            {
+              "roleName": "@everyone",
+              "allow": "0",
+              "deny": "2048"
+            }
+          ]
+        },
+        {
+          "name": "🧑‍⚖️┃appeal",
+          "type": "text",
+          "permissions": [
+            {
+              "roleName": "Member",
+              "allow": "1049600",
+              "deny": "0"
+            },
+            {
+              "roleName": "@everyone",
+              "allow": "0",
+              "deny": "2048"
+            }
+          ]
+        },
+        {
+          "name": "🧑‍⚖️┃appeal-forum",
+          "type": "text",
+          "permissions": [
+            {
+              "roleName": "Member",
+              "allow": "1049600",
+              "deny": "0"
+            },
+            {
+              "roleName": "@everyone",
+              "allow": "0",
+              "deny": "2048"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Chatting",
+      "permissions": [
+        {
+          "roleName": "Member",
+          "allow": "1049600",
+          "deny": "0"
+        },
+        {
+          "roleName": "@everyone",
+          "allow": "3072",
+          "deny": "163840"
+        }
+      ],
+      "channels": [
+        {
+          "name": "💬┃general",
+          "type": "text",
+          "permissions": [
+            {
+              "roleName": "Member",
+              "allow": "1049600",
+              "deny": "0"
+            },
+            {
+              "roleName": "@everyone",
+              "allow": "3072",
+              "deny": "163840"
+            }
+          ]
+        },
+        {
+          "name": "💬┃general voice",
+          "type": "voice",
+          "permissions": [
+            {
+              "roleName": "@everyone",
+              "allow": "0",
+              "deny": "0"
+            }
+          ]
+        },
+        {
+          "name": "💬┃ngobrol-bebas",
+          "type": "text",
+          "permissions": [
+            {
+              "roleName": "Member",
+              "allow": "1048576",
+              "deny": "1024"
+            },
+            {
+              "roleName": "Indonesian",
+              "allow": "1024",
+              "deny": "0"
+            },
+            {
+              "roleName": "@everyone",
+              "allow": "2048",
+              "deny": "164864"
+            }
+          ]
+        },
+        {
+          "name": "😂┃meme",
+          "type": "text",
+          "permissions": [
+            {
+              "roleName": "Member",
+              "allow": "1082368",
+              "deny": "0"
+            },
+            {
+              "roleName": "@everyone",
+              "allow": "2048",
+              "deny": "163840"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Bot Command",
+      "permissions": [
+        {
+          "roleName": "Member",
+          "allow": "1049600",
+          "deny": "0"
+        },
+        {
+          "roleName": "Bot",
+          "allow": "1049600",
+          "deny": "0"
+        },
+        {
+          "roleName": "@everyone",
+          "allow": "0",
+          "deny": "131072"
+        }
+      ],
+      "channels": [
+        {
+          "name": "🤖┃bot-commands",
+          "type": "text",
+          "permissions": [
+            {
+              "roleName": "Bot",
+              "allow": "1049600",
+              "deny": "0"
+            },
+            {
+              "roleName": "Member",
+              "allow": "1049600",
+              "deny": "0"
+            },
+            {
+              "roleName": "@everyone",
+              "allow": "0",
+              "deny": "131072"
+            }
+          ]
+        },
+        {
+          "name": "🎵┃music-commands",
+          "type": "text",
+          "permissions": [
+            {
+              "roleName": "Member",
+              "allow": "1049600",
+              "deny": "0"
+            },
+            {
+              "roleName": "Bot",
+              "allow": "1049600",
+              "deny": "0"
+            },
+            {
+              "roleName": "@everyone",
+              "allow": "0",
+              "deny": "131072"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Chess Arena",
+      "permissions": [],
+      "channels": [
+        {
+          "name": "⏱️┃rapid-chat",
+          "type": "text",
+          "permissions": [
+            {
+              "roleName": "Member",
+              "allow": "1081344",
+              "deny": "1024"
+            },
+            {
+              "roleName": "@everyone",
+              "allow": "2048",
+              "deny": "163840"
+            },
+            {
+              "roleName": "Rapid",
+              "allow": "1024",
+              "deny": "0"
+            }
+          ]
+        },
+        {
+          "name": "⚡┃blitz-chat",
+          "type": "text",
+          "permissions": [
+            {
+              "roleName": "Member",
+              "allow": "1081344",
+              "deny": "1024"
+            },
+            {
+              "roleName": "@everyone",
+              "allow": "2048",
+              "deny": "163840"
+            },
+            {
+              "roleName": "Blitz",
+              "allow": "1024",
+              "deny": "0"
+            }
+          ]
+        },
+        {
+          "name": "🎯┃bullet-chat",
+          "type": "text",
+          "permissions": [
+            {
+              "roleName": "Member",
+              "allow": "1048576",
+              "deny": "33792"
+            },
+            {
+              "roleName": "Bullet",
+              "allow": "1024",
+              "deny": "0"
+            },
+            {
+              "roleName": "@everyone",
+              "allow": "3072",
+              "deny": "163840"
+            }
+          ]
+        },
+        {
+          "name": "🎯┃960-chat",
+          "type": "text",
+          "permissions": [
+            {
+              "roleName": "Member",
+              "allow": "1048576",
+              "deny": "33792"
+            },
+            {
+              "roleName": "960",
+              "allow": "1024",
+              "deny": "0"
+            },
+            {
+              "roleName": "@everyone",
+              "allow": "2048",
+              "deny": "163840"
+            }
+          ]
+        },
+        {
+          "name": "🎯┃960-daily-chat",
+          "type": "text",
+          "permissions": [
+            {
+              "roleName": "Member",
+              "allow": "1048576",
+              "deny": "33792"
+            },
+            {
+              "roleName": "@everyone",
+              "allow": "2048",
+              "deny": "163840"
+            },
+            {
+              "roleName": "960 Daily",
+              "allow": "1024",
+              "deny": "0"
+            }
+          ]
+        },
+        {
+          "name": "☀️┃daily-chat",
+          "type": "text",
+          "permissions": [
+            {
+              "roleName": "Member",
+              "allow": "1048576",
+              "deny": "33792"
+            },
+            {
+              "roleName": "Daily",
+              "allow": "1024",
+              "deny": "0"
+            },
+            {
+              "roleName": "@everyone",
+              "allow": "2048",
+              "deny": "163840"
+            }
+          ]
+        },
+        {
+          "name": "♟️┃chess-forum",
+          "type": "text",
+          "permissions": []
+        }
+      ]
+    },
+    {
+      "name": "Tournament",
+      "permissions": [],
+      "channels": [
+        {
+          "name": "🏅┃tour-announcement",
+          "type": "announcement",
+          "permissions": [
+            {
+              "roleName": "Member",
+              "allow": "1049600",
+              "deny": "0"
+            },
+            {
+              "roleName": "@everyone",
+              "allow": "0",
+              "deny": "2048"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Server Stats",
+      "permissions": [
+        {
+          "roleName": "@everyone",
+          "allow": "1024",
+          "deny": "1050624"
+        }
+      ],
+      "channels": [
+        {
+          "name": "All Members: 9",
+          "type": "voice",
+          "permissions": [
+            {
+              "roleName": "@everyone",
+              "allow": "1024",
+              "deny": "1050624"
+            }
+          ]
+        },
+        {
+          "name": "Members: 2",
+          "type": "voice",
+          "permissions": [
+            {
+              "roleName": "@everyone",
+              "allow": "1024",
+              "deny": "1050624"
+            }
+          ]
+        },
+        {
+          "name": "Bots: 7",
+          "type": "voice",
+          "permissions": [
+            {
+              "roleName": "@everyone",
+              "allow": "1024",
+              "deny": "1050624"
+            }
+          ]
+        },
+        {
+          "name": "Boosts: 0",
+          "type": "voice",
+          "permissions": [
+            {
+              "roleName": "@everyone",
+              "allow": "1024",
+              "deny": "1050624"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

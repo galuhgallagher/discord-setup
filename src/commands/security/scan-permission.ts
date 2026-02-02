@@ -62,7 +62,7 @@ const command: SlashCommand = {
     const embed = new EmbedBuilder()
       .setTitle("Security Audit Report")
       .setDescription(`Security scan results for **${interaction.guild.name}**`)
-      .setColor(Colors.Yellow)
+      .setColor(Colors.DarkRed)
       .setTimestamp();
 
     embed.addFields({

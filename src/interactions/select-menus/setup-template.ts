@@ -48,7 +48,7 @@ const component: ComponentCommand = {
         .setDescription(
           `Applying server template: **${selectedTemplate}**...\nPlease wait.`,
         )
-        .setColor(Colors.Yellow);
+        .setColor(Colors.DarkRed);
 
       await selectInteraction.editReply({
         embeds: [loadingEmbed],

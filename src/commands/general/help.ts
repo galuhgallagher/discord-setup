@@ -72,7 +72,7 @@ const command: SlashCommand = {
       .setDescription(
         "Here is the list of all available commands.\nType `/help [command]` for more details.",
       )
-      .setColor(Colors.Yellow)
+      .setColor(Colors.DarkRed)
       .setThumbnail(client.user?.displayAvatarURL() || null)
       .setTimestamp();
 

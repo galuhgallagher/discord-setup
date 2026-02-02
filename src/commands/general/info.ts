@@ -23,7 +23,7 @@ const command: SlashCommand = {
 
     const embed = new EmbedBuilder()
       .setTitle("Bot Information")
-      .setColor(Colors.Yellow)
+      .setColor(Colors.DarkRed)
       .addFields(
         {
           name: "Bot Name",

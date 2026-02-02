@@ -24,9 +24,10 @@ const command: SlashCommand = {
           "**Available Templates:**\n" +
           "**Gaming**: Channels for gaming communities.\n" +
           "**Study**: Channels for study groups and classes.\n" +
-          "**Community**: General channels for community servers."
+          "**Community**: General channels for community servers." +
+          "**Developer**: Channels for developer and programming communities.",
       )
-      .setColor(Colors.Yellow);
+      .setColor(Colors.DarkRed);
 
     const selectMenu = new StringSelectMenuBuilder()
       .setCustomId("setup_select_template")
@@ -43,11 +44,17 @@ const command: SlashCommand = {
         new StringSelectMenuOptionBuilder()
           .setLabel("General Community")
           .setDescription("Complete setup for general community servers")
-          .setValue("community")
+          .setValue("community"),
+        new StringSelectMenuOptionBuilder()
+          .setLabel("Developer Hub")
+          .setDescription(
+            "Complete setup for developer and programming communities",
+          )
+          .setValue("developer"),
       );
 
     const row = new ActionRowBuilder<StringSelectMenuBuilder>().addComponents(
-      selectMenu
+      selectMenu,
     );
 
     await interaction.reply({
