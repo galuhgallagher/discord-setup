@@ -1,19 +1,104 @@
 {
+  "name": "Study Corner",
+  "roles": [
+    {
+      "name": "@everyone",
+      "color": "#000000",
+      "permissions": "1024",
+      "isEveryone": true
+    },
+    { "name": "Owner", "color": "#f1c40f", "hoist": true, "permissions": "8" },
+    { "name": "Admin", "color": "#e91e63", "hoist": true, "permissions": "8" },
+    {
+      "name": "Moderator",
+      "color": "#1abc9c",
+      "hoist": true,
+      "permissions": "1099511767042"
+    },
+    { "name": "Tutor", "color": "#9b59b6", "hoist": true, "permissions": "0" },
+    { "name": "Bot", "color": "#95a5a6", "hoist": true, "permissions": "8" },
+    {
+      "name": "Student",
+      "color": "#3498db",
+      "hoist": false,
+      "permissions": "0"
+    }
+  ],
   "categories": [
     {
-      "name": "🏫 CAMPUS INFO",
+      "name": "🛡️ Faculty Room",
+      "permissions": [
+        { "roleName": "@everyone", "allow": "0", "deny": "1024" },
+        { "roleName": "Moderator", "allow": "1024", "deny": "0" },
+        { "roleName": "Tutor", "allow": "1024", "deny": "0" },
+        { "roleName": "Admin", "allow": "1024", "deny": "0" }
+      ],
       "channels": [
-        { "name": "bulletin-board", "type": "text" },
-        { "name": "schedule", "type": "text" }
+        { "name": "🛡️┃staff-chat", "type": "text" },
+        { "name": "📝┃lesson-planning", "type": "text" },
+        { "name": "📂┃resource-archive", "type": "text" }
       ]
     },
     {
-      "name": "📚 STUDY ROOMS",
+      "name": "Information Board",
+      "permissions": [
+        { "roleName": "@everyone", "allow": "0", "deny": "2048" }
+      ],
       "channels": [
-        { "name": "homework-help", "type": "text" },
-        { "name": "resources", "type": "text" },
-        { "name": "Quiet Study A", "type": "voice" },
-        { "name": "Group Discussion", "type": "voice" }
+        { "name": "👋┃welcome", "type": "text" },
+        { "name": "📜┃rules", "type": "text" },
+        { "name": "📢┃announcements", "type": "announcement" },
+        { "name": "📅┃study-schedule", "type": "text" },
+        { "name": "🎓┃pick-roles", "type": "text" }
+      ]
+    },
+    {
+      "name": "Student Lounge",
+      "channels": [
+        { "name": "💬┃study-chat", "type": "text" },
+        { "name": "☕┃break-room", "type": "text" },
+        { "name": "😤┃rant-vent", "type": "text" },
+        { "name": "🤖┃bot-commands", "type": "text" }
+      ]
+    },
+    {
+      "name": "Productivity Zone",
+      "channels": [
+        { "name": "✅┃to-do-list", "type": "text" },
+        { "name": "🎯┃daily-goals", "type": "text" },
+        { "name": "🍅┃pomodoro-timer", "type": "text" },
+        { "name": "🏆┃achievements", "type": "text" }
+      ]
+    },
+    {
+      "name": "Academic Subjects",
+      "channels": [
+        { "name": "📐┃math-stats", "type": "text" },
+        { "name": "🔬┃science-biology", "type": "text" },
+        { "name": "💻┃computer-science", "type": "text" },
+        { "name": "🌍┃languages", "type": "text" },
+        { "name": "🎨┃arts-humanities", "type": "text" }
+      ]
+    },
+    {
+      "name": "Help & Resources",
+      "channels": [
+        { "name": "🆘┃homework-help", "type": "text" },
+        { "name": "📚┃notes-sharing", "type": "text" },
+        { "name": "🔗┃useful-links", "type": "text" },
+        { "name": "📝┃exam-prep", "type": "text" }
+      ]
+    },
+    {
+      "name": "Library (Read Only)",
+      "permissions": [
+        { "roleName": "@everyone", "allow": "1024", "deny": "2048" },
+        { "roleName": "Tutor", "allow": "2048", "deny": "0" },
+        { "roleName": "Admin", "allow": "2048", "deny": "0" }
+      ],
+      "channels": [
+        { "name": "📕┃textbooks-pdf", "type": "text" },
+        { "name": "💾┃software-tools", "type": "text" }
       ]
     }
   ]

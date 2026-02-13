@@ -1,0 +1,87 @@
+{
+  "name": "Crypto & NFT Hub",
+  "roles": [
+    {
+      "name": "@everyone",
+      "color": "#000000",
+      "permissions": "1024",
+      "isEveryone": true
+    },
+    { "name": "Owner", "color": "#f1c40f", "hoist": true, "permissions": "8" },
+    { "name": "Admin", "color": "#e91e63", "hoist": true, "permissions": "8" },
+    {
+      "name": "Moderator",
+      "color": "#1abc9c",
+      "hoist": true,
+      "permissions": "1099511767042"
+    },
+    { "name": "Bot", "color": "#95a5a6", "hoist": true, "permissions": "8" },
+    {
+      "name": "Whale 🐳",
+      "color": "#3498db",
+      "hoist": true,
+      "permissions": "0"
+    },
+    {
+      "name": "Analyst 📈",
+      "color": "#2ecc71",
+      "hoist": true,
+      "permissions": "0"
+    },
+    {
+      "name": "Member",
+      "color": "#bdc3c7",
+      "hoist": true,
+      "permissions": "3072"
+    }
+  ],
+  "categories": [
+    {
+      "name": "🛡️ Security Room",
+      "permissions": [
+        { "roleName": "@everyone", "allow": "0", "deny": "1024" },
+        { "roleName": "Moderator", "allow": "1024", "deny": "0" },
+        { "roleName": "Admin", "allow": "1024", "deny": "0" }
+      ],
+      "channels": [
+        { "name": "🛡️┃mod-chat", "type": "text" },
+        { "name": "🤖┃spam-logs", "type": "text" },
+        { "name": "🚨┃scam-reports", "type": "text" }
+      ]
+    },
+    {
+      "name": "Start Here",
+      "channels": [
+        { "name": "👋┃welcome", "type": "text" },
+        { "name": "🚨┃scam-alert", "type": "text" },
+        { "name": "💎┃official-links", "type": "text" }
+      ]
+    },
+    {
+      "name": "Market Talk",
+      "channels": [
+        { "name": "💬┃general-chat", "type": "text" },
+        { "name": "🌕┃bitcoin-talk", "type": "text" },
+        { "name": "🚀┃altcoins", "type": "text" },
+        { "name": "⛽┃gas-tracker", "type": "text" }
+      ]
+    },
+    {
+      "name": "NFT Space",
+      "channels": [
+        { "name": "🖼️┃nft-discussion", "type": "text" },
+        { "name": "📅┃mint-calendar", "type": "text" },
+        { "name": "💎┃alpha-calls", "type": "text" },
+        { "name": "🎨┃show-your-art", "type": "text" }
+      ]
+    },
+    {
+      "name": "Opportunities",
+      "channels": [
+        { "name": "🪂┃airdrops", "type": "text" },
+        { "name": "🌾┃yield-farming", "type": "text" },
+        { "name": "📰┃crypto-news", "type": "text" }
+      ]
+    }
+  ]
+}

@@ -1,20 +1,86 @@
 {
+  "name": "Creator Hub",
+  "roles": [
+    {
+      "name": "@everyone",
+      "color": "#000000",
+      "permissions": "1024",
+      "isEveryone": true
+    },
+    { "name": "Owner", "color": "#f1c40f", "hoist": true, "permissions": "8" },
+    { "name": "Admin", "color": "#e91e63", "hoist": true, "permissions": "8" },
+    {
+      "name": "Moderator",
+      "color": "#1abc9c",
+      "hoist": true,
+      "permissions": "1099511767042"
+    },
+    { "name": "Bot", "color": "#95a5a6", "hoist": true, "permissions": "8" },
+    {
+      "name": "Streamer",
+      "color": "#9b59b6",
+      "hoist": true,
+      "permissions": "0"
+    },
+    {
+      "name": "YouTuber",
+      "color": "#e74c3c",
+      "hoist": true,
+      "permissions": "0"
+    },
+    {
+      "name": "Subscriber",
+      "color": "#2ecc71",
+      "hoist": true,
+      "permissions": "3072"
+    }
+  ],
   "categories": [
     {
-      "name": "👋 WELCOME",
+      "name": "🛡️ Management",
+      "permissions": [
+        { "roleName": "@everyone", "allow": "0", "deny": "1024" },
+        { "roleName": "Moderator", "allow": "1024", "deny": "0" },
+        { "roleName": "Admin", "allow": "1024", "deny": "0" }
+      ],
       "channels": [
-        { "name": "welcome", "type": "text" },
-        { "name": "roles", "type": "text" }
+        { "name": "🛡️┃staff-lounge", "type": "text" },
+        { "name": "🤝┃collaboration-mgmt", "type": "text" },
+        { "name": "📝┃content-planning", "type": "text" }
       ]
     },
     {
-      "name": "💬 SOCIAL",
+      "name": "Information",
       "channels": [
-        { "name": "general", "type": "text" },
-        { "name": "memes", "type": "text" },
-        { "name": "media", "type": "text" },
-        { "name": "Lounge", "type": "voice" },
-        { "name": "Music", "type": "voice" }
+        { "name": "👋┃welcome", "type": "text" },
+        { "name": "🔴┃live-now", "type": "announcement" },
+        { "name": "🎬┃new-videos", "type": "announcement" },
+        { "name": "📅┃schedule", "type": "text" }
+      ]
+    },
+    {
+      "name": "Community",
+      "channels": [
+        { "name": "💬┃chat-general", "type": "text" },
+        { "name": "💡┃content-ideas", "type": "text" },
+        { "name": "📩┃feedback", "type": "text" },
+        { "name": "😂┃meme-review", "type": "text" }
+      ]
+    },
+    {
+      "name": "Creator Support",
+      "channels": [
+        { "name": "⚙️┃obs-streamlabs-help", "type": "text" },
+        { "name": "✂️┃video-editing", "type": "text" },
+        { "name": "🎨┃thumbnail-design", "type": "text" },
+        { "name": "🤝┃collab-request", "type": "text" }
+      ]
+    },
+    {
+      "name": "Exclusive",
+      "channels": [
+        { "name": "🔒┃sub-only-chat", "type": "text" },
+        { "name": "🎁┃giveaways", "type": "text" }
       ]
     }
   ]

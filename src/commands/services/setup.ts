@@ -24,8 +24,9 @@ const command: SlashCommand = {
           "**Available Templates:**\n" +
           "**Gaming**: Channels for gaming communities.\n" +
           "**Study**: Channels for study groups and classes.\n" +
-          "**Community**: General channels for community servers." +
-          "**Developer**: Channels for developer and programming communities.",
+          "**Creator Community**: Channels for creator community servers.\n" +
+          "**Developer**: Channels for developer and programming communities.\n" +
+          "**Crypto & NFT**: Channels for crypto and NFT communities.",
       )
       .setColor(Colors.DarkRed);
 
@@ -42,8 +43,8 @@ const command: SlashCommand = {
           .setDescription("Complete setup for study groups and classes")
           .setValue("study"),
         new StringSelectMenuOptionBuilder()
-          .setLabel("General Community")
-          .setDescription("Complete setup for general community servers")
+          .setLabel("Creator Community")
+          .setDescription("Complete setup for creator community servers")
           .setValue("community"),
         new StringSelectMenuOptionBuilder()
           .setLabel("Developer Hub")
@@ -51,6 +52,10 @@ const command: SlashCommand = {
             "Complete setup for developer and programming communities",
           )
           .setValue("developer"),
+        new StringSelectMenuOptionBuilder()
+          .setLabel("Crypto & NFT Hub")
+          .setDescription("Complete setup for crypto and NFT communities")
+          .setValue("crypto"),
       );
 
     const row = new ActionRowBuilder<StringSelectMenuBuilder>().addComponents(

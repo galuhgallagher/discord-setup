@@ -1,26 +1,100 @@
 {
+  "name": "Gaming Lounge",
+  "roles": [
+    {
+      "name": "@everyone",
+      "color": "#000000",
+      "permissions": "1024",
+      "isEveryone": true
+    },
+    { "name": "Owner", "color": "#f1c40f", "hoist": true, "permissions": "8" },
+    { "name": "Admin", "color": "#e91e63", "hoist": true, "permissions": "8" },
+    {
+      "name": "Moderator",
+      "color": "#1abc9c",
+      "hoist": true,
+      "permissions": "1099511767042"
+    },
+    { "name": "Bot", "color": "#95a5a6", "hoist": true, "permissions": "8" },
+    {
+      "name": "Pro Player",
+      "color": "#9b59b6",
+      "hoist": true,
+      "permissions": "0"
+    },
+    {
+      "name": "Member",
+      "color": "#3498db",
+      "hoist": true,
+      "permissions": "3072"
+    },
+    {
+      "name": "FPS Player",
+      "color": "#e74c3c",
+      "hoist": false,
+      "permissions": "0"
+    },
+    {
+      "name": "RPG Player",
+      "color": "#2ecc71",
+      "hoist": false,
+      "permissions": "0"
+    }
+  ],
   "categories": [
     {
-      "name": "📜 INFORMATION",
+      "name": "🛡️ Staff HQ",
+      "permissions": [
+        { "roleName": "@everyone", "allow": "0", "deny": "1024" },
+        { "roleName": "Moderator", "allow": "1024", "deny": "0" },
+        { "roleName": "Admin", "allow": "1024", "deny": "0" }
+      ],
       "channels": [
-        { "name": "rules", "type": "text" },
-        { "name": "announcements", "type": "text" }
+        { "name": "🛡️┃admin-chat", "type": "text" },
+        { "name": "🚨┃report-player", "type": "text" },
+        { "name": "📝┃ban-appeals", "type": "text" }
       ]
     },
     {
-      "name": "🎮 GENERAL ZONE",
+      "name": "Lobby",
       "channels": [
-        { "name": "general-chat", "type": "text" },
-        { "name": "looking-for-group", "type": "text" },
-        { "name": "clips-and-highlights", "type": "text" },
-        { "name": "Lobby", "type": "voice" }
+        { "name": "👋┃welcome", "type": "text" },
+        { "name": "📜┃rules", "type": "text" },
+        { "name": "📢┃news-update", "type": "announcement" },
+        { "name": "🎭┃choose-game", "type": "text" }
       ]
     },
     {
-      "name": "🏆 RANKED",
+      "name": "Social",
       "channels": [
-        { "name": "Team 1", "type": "voice" },
-        { "name": "Team 2", "type": "voice" }
+        { "name": "💬┃general-chat", "type": "text" },
+        { "name": "😂┃memes", "type": "text" },
+        { "name": "📸┃setup-battlestation", "type": "text" },
+        { "name": "🤖┃bot-commands", "type": "text" }
+      ]
+    },
+    {
+      "name": "Gaming Area",
+      "channels": [
+        { "name": "🔫┃fps-discussion", "type": "text" },
+        { "name": "⚔️┃moba-discussion", "type": "text" },
+        { "name": "🐉┃rpg-discussion", "type": "text" },
+        { "name": "🕹️┃retro-games", "type": "text" }
+      ]
+    },
+    {
+      "name": "Looking For Group (LFG)",
+      "channels": [
+        { "name": "🤝┃lfg-ranked", "type": "text" },
+        { "name": "🤝┃lfg-casual", "type": "text" },
+        { "name": "🏆┃tournament-info", "type": "text" }
+      ]
+    },
+    {
+      "name": "Clips & Content",
+      "channels": [
+        { "name": "🔥┃highlights", "type": "text" },
+        { "name": "🎥┃stream-alerts", "type": "text" }
       ]
     }
   ]
